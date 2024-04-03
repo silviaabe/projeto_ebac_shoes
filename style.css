@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+.container,
+#products {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+header .container,
+section .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: rgb(255, 209, 140);
+  color: #fff;
+  padding: 16px 0;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+header nav li a:hover {
+  font-weight: bold;
+}
+
+section .container img {
+  width: 40%;
+  margin-right: 32px;
+}
+
+section .container {
+  align-items: flex-start;
+}
+
+section {
+  padding: 24px 0;
+}
+
+section h2 {
+  color: rgb(250, 190, 99);
+  border-bottom: 1px solid rgb(250, 190, 99);
+  margin-bottom: 28px;
+  padding: 0 0 16px;
+  font-style: italic;
+}
+
+section p {
+  color: gray;
+}
+
+#products h2 {
+  margin-bottom: 28px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(4, 24.25%);
+  column-gap: 1%;
+  row-gap: 5%;
+}
+
+.product img {
+  max-width: 100%;
+}
+
+.product h3 {
+  margin: 16px auto 8px;
+  color: rgb(250, 190, 99);
+  font-weight: bold;
+}
+
+.product a {
+  text-decoration: none;
+}
+
+.product a h3:hover {
+  color: rgb(245, 155, 20);
+}
+
+.product p {
+  margin-bottom: 16px;
+}
+
+.product a p:hover {
+  color: rgb(58, 58, 58);
+}
+
+.product button {
+  background-color: rgb(250, 190, 99);
+  color: #fff;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.product button:hover {
+  cursor: pointer;
+  background-color: rgb(245, 155, 20);
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 90%;
+  }
+
+  #about .container {
+    display: block;
+  }
+
+  #about .container img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  #products {
+    max-width: 90%;
+  }
+
+  #products h2,
+  #products .product {
+    display: block;
+  }
+
+  .product button {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  #about .container {
+    display: block;
+  }
+
+  #about .container img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  #products {
+    max-width: 90%;
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+    row-gap: 5%;
+  }
+
+  .product button {
+    margin-bottom: 16px;
+  }
+}
